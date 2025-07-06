@@ -1,0 +1,19 @@
+{
+  "name": "word-translator",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build",
+    "watch": "vite build --watch",
+    "start:firefox": "web-ext run --source-dir dist --firefox '/Applications/Firefox Developer Edition.app'",
+    "package": "web-ext build --source-dir dist"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5",
+    "web-ext": "^8.8.0"
+  }
+}

@@ -1,0 +1,4 @@
+/* Import all CSS modules */
+@import './global.css';
+@import './button/styles.css';
+@import './tooltip/styles.css';

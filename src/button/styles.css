@@ -1,0 +1,22 @@
+/* Button styles */
+.translate-button {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  z-index: 9999;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.translate-button__icon {
+  display: block;
+  margin: 0 auto;
+  width: 22px;
+  height: 22px;
+}
