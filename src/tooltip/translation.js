@@ -22,13 +22,13 @@ export function requestTranslation(text, targetLang, translationTextEl) {
           return reject(new Error(chrome.runtime.lastError.message));
         }
 
-        if (response && response.translated) {
-          translationTextEl.textContent = response.translated[0].text;
-          resolve();
-        } else {
+        if (!response?.translated[0]?.text) {
           translationTextEl.textContent = "[Translation error]";
-          reject(new Error("Translation failed"));
+          return reject(new Error("Translation failed"));
         }
+
+        translationTextEl.textContent = response.translated[0]?.text;
+        resolve();
       }
     );
   });
