@@ -1,6 +1,7 @@
 # Tooltip Translator
 
 A browser extension for translating selected text via a tooltip popup.
+https://addons.mozilla.org/en-US/firefox/addon/tooltip-translate/
 
 ## Requirements
 
